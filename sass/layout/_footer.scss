@@ -1,0 +1,22 @@
+@use "../utilities/variables";
+
+/*  ***o_o*** My Styles ***o_o*** Footer */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+  background-color: variables.$footer-color;
+  color: variables.$bg-color;
+}
+
+.contacto_iconos a {
+  color: variables.$first-color;
+  transition: all 0.3s ease-out;
+  font-size: 1.5rem;
+  text-decoration: none;
+  &:hover {
+    color: variables.$bs-white;
+  }
+}

@@ -1,0 +1,45 @@
+@use "../utilities/variables";
+
+/*  ***o_o*** My Styles ***o_o*** Nav */
+
+.navbar-brand img {
+  width: auto;
+  height: 3rem;
+  border-radius: 3px;
+}
+
+.nav-item {
+  transition: all 0.3s ease-out;
+  &:hover {
+    background-color: variables.$first-alpha-color;
+  }
+}
+
+.nav-link {
+  margin-left: 0.5rem;
+  color: variables.$first-color;
+  font-size: 1.15rem;
+  font-weight: bold;
+  &:hover {
+    color: variables.$bs-white;
+  }
+}
+
+.navbar-dark .navbar-toggler {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280,105,153, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  transition: all 0.3s ease-out;
+}
+
+.navbar-dark .navbar-toggler:hover {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler:focus {
+  box-shadow: variables.$box-shadow-focus-footer;
+}
+
+@media (min-width: 992px) {
+  .nav-item:hover {
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,54 @@
+@use "../utilities/variables";
+
+/* **0_0 ** Layout Sobre Mi **o_o** */
+
+.bg-alpha-color {
+  background-color: variables.$bg-alpha-color;
+}
+
+.bg-color {
+  background-color: variables.$bg-color;
+}
+
+.bg-hero-image {
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.btn {
+  position: relative;
+  border: none;
+  border-radius: 0.25rem;
+  width: 12rem;
+  height: 2.5rem;
+  padding: 0.2rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  overflow: hidden;
+  box-shadow: 0.25rem 0.25rem 0.5rem 0.25rem rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.anim-bottom::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0.25rem;
+  background-color: variables.$first-color;
+  transition: width 0.5s ease, left 0.5s ease, right 0.5s ease;
+}
+
+.anim-bottom:hover::after {
+  width: 100%;
+}
+
+.to-center::after {
+  left: 50%;
+}
+
+.to-center:hover::after {
+  left: 0;
+}

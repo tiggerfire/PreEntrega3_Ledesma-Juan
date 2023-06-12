@@ -1,0 +1,32 @@
+/* **0_0 ** Layout Portafolio **o_o** */
+
+.card-img {
+  width: 80%;
+  border-radius: 30px;
+  border: 1px solid rgb(204, 204, 204);
+  transition: opacity 1s ease-out, border-color 3s steps(3),
+    box-shadow 1.5s linear 2s;
+  &:hover {
+    box-shadow: 1rem 1rem 2rem 0.5rem #000;
+    border-color: rgb(218, 112, 214);
+    opacity: 75%;
+  }
+}
+
+.pulse {
+  animation: pulse 1s linear infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1.1);
+  }
+
+  50% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

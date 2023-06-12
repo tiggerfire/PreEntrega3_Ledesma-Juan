@@ -1,0 +1,179 @@
+@use "../utilities/variables";
+
+/* **0_0 ** Layout Competencia **o_o** */
+
+.container_skill {
+  width: 4 0%;
+  top: 3rem;
+  left: 20px;
+  .skill {
+    padding: 1rem;
+    .box_skill {
+      width: 100%;
+      margin-left: 0.7rem;
+      text-align: right;
+      color: variables.$bg-color;
+      background-color: rgb(220, 220, 220);
+      border-radius: 1rem;
+    }
+  }
+}
+
+@mixin border-radius {
+  border-radius: 1rem;
+}
+
+.html_skill {
+  @include border-radius;
+  width: 80%;
+  background-color: rgb(0, 128, 0);
+}
+.css {
+  @include border-radius;
+  width: 65%;
+  background-color: rgb(0, 0, 255);
+}
+.js {
+  @include border-radius;
+  width: 30%;
+  background-color: rgb(255, 0, 0);
+}
+
+.figma {
+  @include border-radius;
+  width: 50%;
+  background-color: rgb(128, 128, 128);
+}
+
+.macdown {
+  @include border-radius;
+  width: 50%;
+  background-color: rgb(255, 105, 180);
+}
+
+.tgitgithub {
+  @include border-radius;
+  width: 50%;
+  background-color: rgb(255, 140, 0);
+}
+
+.circular {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  min-height: 48vh;
+  background: --;
+  .container_softSkill {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+    background: variables.$first-color;
+    border: 2px solid rgb(52, 58, 64);
+    border-radius: 10px;
+    .soft_skill {
+      width: 200px;
+      height: 200px;
+      margin: 16px;
+      position: relative;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      font-size: 20px;
+      line-height: 200px;
+      color: variables.$bg-color;
+      border-radius: 50%;
+      overflow: hidden;
+      background: rgb(7, 34, 39);
+      span {
+        margin-bottom: 50px;
+        text-align: center;
+        font-size: 18px;
+        letter-spacing: 2px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.soft_skill .ability {
+  position: relative;
+  z-index: 100;
+}
+
+.soft_skill .overlay {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgb(7, 34, 39);
+}
+
+@mixin soft_skill {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 8px solid rgb(255, 225, 98);
+  border-radius: 100px 0px 0px 100px;
+  border-right: 0;
+  transform-origin: right;
+}
+.soft_skill .left {
+  @include soft_skill;
+}
+.soft_skill .right {
+  @include soft_skill;
+}
+
+.soft_skill .left {
+  animation: load1 1s linear forwards;
+}
+
+.soft_skill:nth-of-type(2) .right,
+.soft_skill:nth-of-type(3) .right {
+  animation: load2 0.5s linear forwards 1s;
+}
+
+.soft_skill:last-of-type .right,
+.soft_skill:first-of-type .right {
+  animation: load3 0.8s linear forwards 1s;
+}
+
+@keyframes load1 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes load2 {
+  0% {
+    z-index: 100;
+    transform: rotate(180deg);
+  }
+
+  100% {
+    z-index: 100;
+    transform: rotate(270deg);
+  }
+}
+
+@keyframes load3 {
+  0% {
+    z-index: 100;
+    transform: rotate(180deg);
+  }
+
+  100% {
+    z-index: 100;
+    transform: rotate(315deg);
+  }
+}
