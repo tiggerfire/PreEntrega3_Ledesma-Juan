@@ -114,6 +114,10 @@ body {
   background-position: center;
 }
 
+.mis_datos {
+  list-style: none;
+}
+
 .btn {
   position: relative;
   border: none;
