@@ -4,7 +4,7 @@
   width: 80%;
   border-radius: 30px;
   border: 1px solid rgb(204, 204, 204);
-  transition: opacity 1s ease-out, border-color 3s steps(3),
+  transition: opacity 1s ease-out, border-color 2s steps(3),
     box-shadow 1.5s linear 2s;
   &:hover {
     box-shadow: 1rem 1rem 2rem 0.5rem #000;
