@@ -96,7 +96,7 @@ body {
 
 .carousel-item img {
   height: 75vh;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 /* **0_0 ** Layout Sobre Mi **o_o** */
@@ -123,8 +123,8 @@ body {
   border-top: thin solid rgb(0, 105, 153);
   border-bottom: thin solid rgb(0, 105, 153);
   margin: 2rem auto;
-  padding: 0.5rem 1rem;
-  width: 250px;
+  padding: 0.5rem;
+  width: 220px;
   text-align: center;
   color: #333;
 }
@@ -169,11 +169,11 @@ body {
 /* **0_0 ** Layout Competencia **o_o** */
 .container_skill {
   width: 4 0%;
-  top: 3rem;
+  top: 1rem;
   left: 20px;
 }
 .container_skill .skill {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 .container_skill .skill .box_skill {
   width: 100%;
@@ -253,7 +253,7 @@ body {
   background: rgb(7, 34, 39);
 }
 .circular .container_softSkill .soft_skill span {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   text-align: center;
   font-size: 18px;
   letter-spacing: 2px;
@@ -377,7 +377,7 @@ body {
 .contact-form > * {
   display: block;
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   padding: 0.5rem;
   font-family: sans-serif;
   font-size: 1rem;
