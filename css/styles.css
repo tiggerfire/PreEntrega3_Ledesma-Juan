@@ -96,6 +96,7 @@ body {
 
 .carousel-item img {
   height: 75vh;
+  object-fit: fill;
 }
 
 /* **0_0 ** Layout Sobre Mi **o_o** */
@@ -118,12 +119,23 @@ body {
   list-style: none;
 }
 
+.section-title {
+  border-top: thin solid rgb(0, 105, 153);
+  border-bottom: thin solid rgb(0, 105, 153);
+  margin: 2rem auto;
+  padding: 0.5rem 1rem;
+  width: 250px;
+  text-align: center;
+  color: #333;
+}
+
 .btn {
   position: relative;
   border: none;
   border-radius: 0.25rem;
   width: 12rem;
   height: 2.5rem;
+  left: 2.5rem;
   padding: 0.2rem;
   font-size: 1.25rem;
   font-weight: bold;
